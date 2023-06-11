@@ -25,6 +25,9 @@ After completing the code I ran the program a few times to generate some sample 
 2 Hours for Backend API Solution
 1 Hour for Documentation / Comments
 
+## Recording of Successful Solution
+https://youtu.be/wSf-4tySTNw
+
 ## Client Facing Application
 
 In order to scale up API to a client facing web application where users can select an exhibition, highlight similarity criteria, and receive results I would further the functionality within the InitialSearch().get_initial_collection() method by introducing User controlled options for the search title, dates, and venue. If there is no concern for API calls / call limits than the user interface could call the exhibition API upon each user change, otherwise the API would be executed upon the click of a user button. A user would then be able to scroll through the pieces of art contained within the exhibitions generated and upon hovering over a piece be presented with it's metadata. The metadata would overlay on the image and be presented in the form of buttons which the user could select to generate a customized exhibition.
