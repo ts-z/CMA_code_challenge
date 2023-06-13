@@ -8,6 +8,30 @@ As a User I'd like to be able to create custom collections of art from existing 
 
 A Backend Python based API that prompts the user for search criteria, allows them to select a unique piece of art ('a highlight piece') to retrieve meta data on, and finally create a custom exhibition based off meta data they select
 
+## Setup / Environment
+- **Python** which can be downloaded and installed @ https://www.python.org/downloads/
+    - includes the 'os' (operating system), 'pip' (package installer) and 'pprint' (pretty print) packages 
+- **pip** package manger (will be automatically installed if you're using the link above to download and install Python)
+- **pymongo** driver for MongoDB connections, more info @ https://pypi.org/project/pymongo/, documentation @ https://pymongo.readthedocs.io/en/stable/
+```shell
+pip install pymongo
+```
+- **load_dotenv** package that reads key-value pairs from a .env file used in a similar fashion to the .env.EXAMPLE file documentation @ https://pypi.org/project/python-dotenv/
+```shell
+pip install python-dotenv
+``` 
+## Running the Program
+1. **Clone** the repository to your local machine
+2. **Create** a .env file in the root directory of the project and add the following key data
+        1. ATLAS_URI
+        2. DB_NAME
+        - see .env.EXAMPLE for reference
+3. **Run** the program using the command 
+```shell
+python __init__.py
+```
+Answer the prompts in the console
+
 ## Process
 
 I began by breaking down the problem into three major sections:
